@@ -1,26 +1,29 @@
-import ChartPlaceholder from "./chart-placeholder.svg";
+import Abimage from "../../../assets/images/abimage4.png";
+import Reach1 from "../../../assets/icons/Reach1.svg";
+import Reach2 from "../../../assets/icons/Reach2.svg";
 
 const cards = [
   {
-    title: "Global standards",
-    text: "Structured processes that keep financial operations consistent and accountable.",
+    image: Reach1,
+    title: "42+ Active Corridors",
+    text: "Real-time tracking of FX spreads and institutional settlement efficiency.",
   },
   {
-    title: "Local precision",
-    text: "Practical execution that fits real business needs and local market realities.",
+    image: Reach2,
+    title: "$12B Annual Telemetry",
+    text: "Aggregate transaction volume processed through our forensic models.",
   },
 ];
 
-function ReachCard({ index, title, text }) {
+function ReachCard({ image, title, text, index }) {
+  const bgClass = index % 2 === 0 ? "bg-[#EFEFEF]" : "lg:bg-[#FAF5E1] bg-[#B4C243]";
   return (
-    <article className="rounded-[24px] border border-[#e3e7d6] bg-white p-6 shadow-[0_12px_28px_rgba(0,0,0,0.05)]">
-      <div className="flex items-start gap-4">
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eef2dd] text-sm font-semibold text-[#6c7d22]">
-          0{index}
-        </div>
+    <article className={`rounded-[10px] border border-[#e3e7d6] ${bgClass} p-4 shadow-[0_12px_28px_rgba(0,0,0,0.05)]`}>
+      <div className="flex items-center gap-3">
+        <img src={image} alt={title} className="shrink-0" />
         <div>
-          <h3 className="text-lg font-semibold text-[#1f241a]">{title}</h3>
-          <p className="mt-2 text-[15px] leading-7 text-[#5d6358]">{text}</p>
+          <h3 className="text-[17px] sm:text-[20px] font-medium text-[#2C2C2C]">{title}</h3>
+          <p className="text-[13px] sm:text-[15px] leading-6 text-[#4E4E4E]">{text}</p>
         </div>
       </div>
     </article>
@@ -29,37 +32,35 @@ function ReachCard({ index, title, text }) {
 
 export default function Reach() {
   return (
-    <section className="bg-white px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-      <div className="mx-auto max-w-[1180px]">
+    <section id="reach" className="bg-[#F9F9F9] px-4 py-8 sm:px-6 md:px-10 lg:px-[160px] lg:py-10">
+      <div className="mx-auto max-w-[2000px]">
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#7b8626]">
-            Reach
-          </p>
-          <h2 className="mt-4 text-3xl font-semibold text-[#1f241a] sm:text-4xl">
-            Global Reach, Local Precision
+          <h2 className="mt-4 text-[22px] sm:text-[30px] lg:text-[40px] font-medium text-[#2C2C2C]">
+            Global Reach. Local Precision
           </h2>
-          <p className="mx-auto mt-4 max-w-[760px] text-[15px] leading-8 text-[#5d6358]">
-            We combine broad operational thinking with a grounded execution
-            model so teams can move confidently across markets without losing
-            visibility.
+          <p className="mx-auto mt-3 lg:mt-4 max-w-[850px] text-[14px] sm:text-[15px] lg:text-[18px] leading-7 sm:leading-8 text-[#4E4E4E]">
+            Our network of proprietary nodes captures high-fidelity telemetry
+            from every major settlement corridor, normalizing regional
+            complexity into actionable alpha.
           </p>
         </div>
 
-        <div className="mt-10 overflow-hidden rounded-[30px] border border-[#e7ebdd] bg-[#f9faf4] p-4 shadow-[0_14px_36px_rgba(0,0,0,0.05)] sm:p-6">
+        <div className="mt-4 lg:mt-6">
           <img
-            src={ChartPlaceholder}
+            src={Abimage}
             alt="Chart placeholder"
             className="h-auto w-full"
           />
         </div>
 
-        <div className="mt-6 grid gap-5 lg:grid-cols-2">
+        <div className="mt-4 lg:mt-6 grid gap-3 sm:grid-cols-2 lg:gap-5 mx-auto max-w-[950px]">
           {cards.map((card, index) => (
             <ReachCard
               key={card.title}
-              index={index + 1}
+              image={card.image}
               title={card.title}
               text={card.text}
+              index={index}
             />
           ))}
         </div>

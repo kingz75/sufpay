@@ -1,50 +1,55 @@
+import Frame1 from "../../../assets/icons/Frame1.svg";
+import Frame2 from "../../../assets/icons/Frame2.svg";
+import Frame3 from "../../../assets/icons/Frame3.svg";
+
 const cards = [
   {
-    step: "01",
-    title: "Digital Payment",
-    text: "Secure rails for collecting, moving, and reconciling payments with confidence.",
+    image: Frame1,
+    title: "1. Raw Data Harvesting",
+    text: "We bypass secondary reports to ingest raw telemetry directly from network endpoints, ensuring data integrity at the source..",
   },
   {
-    step: "02",
-    title: "Payment Management",
-    text: "Practical tools for approvals, oversight, tracking, and transaction visibility.",
+    image: Frame2,
+    title: "2. Forensic Fee Analysis",
+    text: "Algorithmically deconstructing interchange, scheme fees, and acquiring markups to identify systemic over-charging patterns..",
   },
   {
-    step: "03",
-    title: "Finance",
-    text: "Reliable financial operations designed for clarity, growth, and resilience.",
+    image: Frame3,
+    title: "3. Objective Benchmark Modeling",
+    text: "Comparing your performance against synthetic optimal models to pinpoint exact areas of operational alpha and efficiency..",
   },
 ];
 
 export default function Framework() {
   return (
-    <section className="bg-[#fbfbf5] px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-      <div className="mx-auto max-w-[1180px]">
+    <section id="framework" className="bg-[#F9F9F9] py-10 lg:pb-20">
+      <div className="mx-auto max-w-[2000px] px-4 sm:px-6 md:px-10 lg:px-[160px]">
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#7b8626]">
-            Framework
-          </p>
-          <h2 className="mt-4 text-3xl font-semibold text-[#1f241a] sm:text-4xl">
-            The Qafar framework
+          <h2 className="mt-4 text-[22px] sm:text-[28px] lg:text-[40px] font-medium text-[#1f241a]">
+            The Quant Framework
           </h2>
         </div>
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-3">
-          {cards.map((card) => (
+        <div className="mt-6 lg:mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-[30px]">
+          {cards.map((card, index) => (
             <article
               key={card.title}
-              className="rounded-[26px] border border-[#e7ebdd] bg-white p-6 shadow-[0_12px_30px_rgba(0,0,0,0.05)]"
+              className={`rounded-[26px] p-6 ${
+                index === 1 ? "border border-[#637524]" : ""
+              } bg-[#F9F9F9]`}
             >
               <div className="flex items-center justify-center">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#eef2dd] text-lg font-semibold text-[#6c7d22]">
-                  {card.step}
-                </div>
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="h-20 w-20 rounded-2xl object-cover"
+                />
               </div>
 
-              <h3 className="mt-5 text-center text-xl font-semibold text-[#1f241a]">
+              <h3 className="mt-3 lg:mt-5 text-center text-[18px] sm:text-[20px] font-medium text-[#1f241a]">
                 {card.title}
               </h3>
-              <p className="mt-3 text-center text-[15px] leading-7 text-[#5d6358]">
+              <p className="mt-2 lg:mt-3 text-center text-[14px] sm:text-[15px] leading-7 text-[#5d6358]">
                 {card.text}
               </p>
             </article>

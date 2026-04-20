@@ -1,45 +1,39 @@
-const careersImage = "/back/proimage4.jpg";
+import Abimage from "../../../assets/images/abimage5.png";
 
 export default function Careers() {
   return (
-    <section className="bg-white px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-      <div className="mx-auto max-w-[1180px]">
-        <p className="text-center text-sm font-semibold uppercase tracking-[0.28em] text-[#7b8626]">
-          Careers
-        </p>
-        <h2 className="mt-4 text-center text-3xl font-semibold text-[#1f241a] sm:text-4xl">
+    <section className="bg-[#F9F9F9] px-4 py-8 sm:px-6 md:px-10 lg:px-[160px] lg:py-20">
+      <div className="mx-auto max-w-[2000px]">
+        <h2 className="text-center text-[22px] sm:text-[32px] lg:text-[40px] font-medium text-[#2C2C2C]">
           Sufpay Careers
         </h2>
 
-        <div className="mt-10 grid overflow-hidden rounded-[30px] bg-[#6c7d22] lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="flex flex-col justify-between px-6 py-8 text-white sm:px-8 sm:py-10 lg:px-10 lg:py-12">
+        <div className="mt-6 lg:mt-10 grid overflow-hidden rounded-[10px] bg-[#637524] lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="flex flex-col px-6 py-8 text-[#FFFFFF] sm:px-8 sm:py-10 lg:px-10 lg:py-24">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-white/70">
-                Internships & Graduate Program
-              </p>
-              <h3 className="mt-4 max-w-[360px] text-3xl font-semibold leading-tight sm:text-[34px]">
-                Learn, grow, and contribute to meaningful work.
+              <h3 className="text-[22px] sm:text-[28px] lg:text-[40px] font-semibold leading-tight lg:mt-4">
+                Internships &amp; Graduate Program
               </h3>
-              <p className="mt-5 max-w-[430px] text-[15px] leading-8 text-white/85">
-                Join a team that values curiosity, ownership, and practical
-                problem solving. We support new talent with the structure they
-                need to grow.
+              <p className="mt-2 lg:mt-5 text-[14px] lg:text-[15px] leading-7 lg:leading-8 text-[#FFFFFF]">
+                Launch your career with hand-on experience in global
+                infrastructure projects. Our 24-month graduate program offers
+                rotation across 3 continents.
               </p>
             </div>
 
             <button
               type="button"
-              className="mt-8 inline-flex w-fit rounded-full bg-[#dbe37d] px-6 py-3 text-sm font-semibold text-[#48541a] transition hover:bg-[#e6ec95]"
+              className="mt-4 lg:mt-8 inline-flex w-full sm:w-fit items-center justify-center rounded-xl bg-[#B4C243] px-8 py-3 text-sm font-semibold text-[#FFFFFF] transition hover:bg-[#e6ec95]"
             >
-              Apply Now
+              Explore more
             </button>
           </div>
 
-          <div className="min-h-[280px] sm:min-h-[340px] lg:min-h-full">
+          <div className="w-full">
             <img
-              src={careersImage}
+              src={Abimage}
               alt="Career team"
-              className="h-full w-full object-cover object-center"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         </div>

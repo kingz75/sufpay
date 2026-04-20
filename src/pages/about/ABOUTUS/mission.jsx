@@ -1,57 +1,42 @@
-const missionImage = "/back/pa1.jpg";
-const missionInsetImage = "/back/proimage3.jpg";
+import Abimage from "../../../assets/images/abimage3.png";
 
 export default function Mission() {
   return (
-    <section className="bg-[#f4f1e3] px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-      <div className="mx-auto grid max-w-[1180px] gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-        <div className="relative">
+    <section className="bg-[#f4f1e3] px-4 py-10 sm:px-6 md:px-10 lg:px-[160px] lg:py-20">
+      <div className="mx-auto max-w-[2000px] grid gap-8 lg:grid-cols-[1.05fr_1.25fr] lg:gap-[71px] lg:items-center">
+        <div className="w-full">
           <img
-            src={missionImage}
+            src={Abimage}
             alt="Community impact"
-            className="h-[350px] w-full rounded-[30px] object-cover object-center shadow-[0_18px_50px_rgba(0,0,0,0.12)] sm:h-[430px]"
-          />
-          <img
-            src={missionInsetImage}
-            alt="Community support"
-            className="absolute -right-2 bottom-5 h-[170px] w-[42%] rounded-[24px] border-[10px] border-[#f4f1e3] object-cover object-center shadow-[0_16px_45px_rgba(0,0,0,0.16)] sm:h-[210px]"
+            className="w-full rounded-xl object-center"
           />
         </div>
 
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#7b8626]">
-            Our Mission
-          </p>
-          <h2 className="mt-4 text-3xl font-semibold text-[#1f241a] sm:text-4xl">
-            Building a better financial experience
-          </h2>
-          <p className="mt-6 text-[15px] leading-8 text-[#5d6358]">
-            We exist to make financial operations simpler, safer, and more
-            transparent for businesses that need dependable digital
-            infrastructure every day.
-          </p>
+        <div className="space-y-6 lg:space-y-8">
+          <div>
+            <h3 className="text-[22px] sm:text-[28px] lg:text-[36px] font-medium text-[#2C2C2C]">
+              Our Mission
+            </h3>
+            <p className="mt-3 text-[14px] sm:text-[15px] lg:text-[18px] leading-7 sm:leading-8 text-[#4E4E4E]">
+              SufPay empowers Nigerians with innovative and secure financial
+              technology solutions, while providing a comprehensive suite of
+              information and communication technology services and business
+              support. We build trust through exceptional customer service and
+              unwavering adherence to regulations, becoming the catalyst for
+              seamless digital transformation for individuals, businesses, and
+              governments in Nigeria.
+            </p>
+          </div>
 
-          <div className="mt-10 space-y-8">
-            <div>
-              <h3 className="text-xl font-semibold text-[#1f241a]">
-                Our Mission
-              </h3>
-              <p className="mt-3 text-[15px] leading-8 text-[#5d6358]">
-                To deliver secure financial technology that helps organisations
-                manage payments, control workflows, and build trust with every
-                transaction.
-              </p>
-            </div>
-
-            <div className="border-t border-[#d8dcc8] pt-6">
-              <h3 className="text-xl font-semibold text-[#1f241a]">
-                Our Vision
-              </h3>
-              <p className="mt-3 text-[15px] leading-8 text-[#5d6358]">
-                To become a trusted partner for modern businesses seeking
-                clarity, efficiency, and long-term financial resilience.
-              </p>
-            </div>
+          <div>
+            <h3 className="text-[22px] sm:text-[28px] lg:text-[36px] font-medium text-[#2C2C2C]">
+              Our Vision
+            </h3>
+            <p className="mt-3 text-[14px] sm:text-[15px] lg:text-[18px] leading-7 sm:leading-8 text-[#4E4E4E]">
+              To become the trusted advisor and one-stop partner for digital
+              transformation, enabling success for Individuals, Businesses,
+              and Governments in Nigeria.
+            </p>
           </div>
         </div>
       </div>
