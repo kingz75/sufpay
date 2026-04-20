@@ -6,20 +6,17 @@ import { AiOutlineClose } from "react-icons/ai";
 import Mainicon from "../../src/assets/icons/mainicon.svg";
 
 const activeLinkClass = ({ isActive }) =>
-  `transition-colors duration-200 ${
-    isActive ? "text-[#6f7f1f]" : "text-[#2f3129] hover:text-[#6f7f1f]"
+  `transition-colors duration-200 ${isActive ? "text-[#6f7f1f]" : "text-[#2f3129] hover:text-[#6f7f1f]"
   }`;
 
 const dropdownTriggerClass = (active) =>
-  `flex items-center gap-1 transition-colors duration-200 ${
-    active ? "text-[#6f7f1f]" : "text-[#2f3129] hover:text-[#6f7f1f]"
+  `flex items-center gap-1 transition-colors duration-200 ${active ? "text-[#6f7f1f]" : "text-[#2f3129] hover:text-[#6f7f1f]"
   }`;
 
 const dropdownLinkClass = ({ isActive }) =>
-  `block rounded-xl px-4 py-2 text-sm transition-colors ${
-    isActive
-      ? "bg-[#eef3df] text-[#6f7f1f]"
-      : "text-[#2f3129] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
+  `block rounded-xl px-4 py-2 text-sm transition-colors ${isActive
+    ? "bg-[#eef3df] text-[#6f7f1f]"
+    : "text-[#2f3129] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
   }`;
 
 export default function Header() {
@@ -257,10 +254,9 @@ export default function Header() {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `rounded-xl px-3 py-2 transition-colors ${
-                    isActive
-                      ? "bg-[#eef3df] text-[#6f7f1f]"
-                      : "text-[#2f3129] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
+                  `rounded-xl px-3 py-2 transition-colors ${isActive
+                    ? "bg-[#eef3df] text-[#6f7f1f]"
+                    : "text-[#2f3129] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
                   }`
                 }
                 onClick={closeMobileMenu}
@@ -271,11 +267,10 @@ export default function Header() {
               <div className="rounded-2xl border border-[#edf0e8] bg-[#fafbf7] px-3 py-2">
                 <button
                   type="button"
-                  className={`flex w-full items-center justify-between transition-colors ${
-                    isAboutActive || mobileAboutOpen
+                  className={`flex w-full items-center justify-between transition-colors ${isAboutActive || mobileAboutOpen
                       ? "text-[#6f7f1f]"
                       : "text-[#2f3129] hover:text-[#6f7f1f]"
-                  }`}
+                    }`}
                   onClick={() => setMobileAboutOpen((open) => !open)}
                   aria-expanded={mobileAboutOpen}
                 >
@@ -292,10 +287,9 @@ export default function Header() {
                     <NavLink
                       to="/about/aboutus"
                       className={({ isActive }) =>
-                        `rounded-xl px-3 py-2 text-sm transition-colors ${
-                          isActive
-                            ? "bg-[#eef3df] text-[#6f7f1f]"
-                            : "text-[#4b4f44] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
+                        `rounded-xl px-3 py-2 text-sm transition-colors ${isActive
+                          ? "bg-[#eef3df] text-[#6f7f1f]"
+                          : "text-[#4b4f44] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
                         }`
                       }
                       onClick={closeMobileMenu}
@@ -305,10 +299,9 @@ export default function Header() {
                     <NavLink
                       to="/about/frofile"
                       className={({ isActive }) =>
-                        `rounded-xl px-3 py-2 text-sm transition-colors ${
-                          isActive
-                            ? "bg-[#eef3df] text-[#6f7f1f]"
-                            : "text-[#4b4f44] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
+                        `rounded-xl px-3 py-2 text-sm transition-colors ${isActive
+                          ? "bg-[#eef3df] text-[#6f7f1f]"
+                          : "text-[#4b4f44] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
                         }`
                       }
                       onClick={closeMobileMenu}
@@ -322,10 +315,9 @@ export default function Header() {
               <NavLink
                 to="/projects"
                 className={({ isActive }) =>
-                  `rounded-xl px-3 py-2 transition-colors ${
-                    isActive
-                      ? "bg-[#eef3df] text-[#6f7f1f]"
-                      : "text-[#2f3129] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
+                  `rounded-xl px-3 py-2 transition-colors ${isActive
+                    ? "bg-[#eef3df] text-[#6f7f1f]"
+                    : "text-[#2f3129] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
                   }`
                 }
                 onClick={closeMobileMenu}
@@ -336,11 +328,10 @@ export default function Header() {
               <div className="rounded-2xl border border-[#edf0e8] bg-[#fafbf7] px-3 py-2">
                 <button
                   type="button"
-                  className={`flex w-full items-center justify-between transition-colors ${
-                    isProductsActive || mobileProductsOpen
+                  className={`flex w-full items-center justify-between transition-colors ${isProductsActive || mobileProductsOpen
                       ? "text-[#6f7f1f]"
                       : "text-[#2f3129] hover:text-[#6f7f1f]"
-                  }`}
+                    }`}
                   onClick={() => setMobileProductsOpen((open) => !open)}
                   aria-expanded={mobileProductsOpen}
                 >
@@ -357,10 +348,9 @@ export default function Header() {
                     <NavLink
                       to="/product"
                       className={({ isActive }) =>
-                        `rounded-xl px-3 py-2 text-sm transition-colors ${
-                          isActive
-                            ? "bg-[#eef3df] text-[#6f7f1f]"
-                            : "text-[#4b4f44] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
+                        `rounded-xl px-3 py-2 text-sm transition-colors ${isActive
+                          ? "bg-[#eef3df] text-[#6f7f1f]"
+                          : "text-[#4b4f44] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
                         }`
                       }
                       onClick={closeMobileMenu}
@@ -370,10 +360,9 @@ export default function Header() {
                     <NavLink
                       to="/pricing"
                       className={({ isActive }) =>
-                        `rounded-xl px-3 py-2 text-sm transition-colors ${
-                          isActive
-                            ? "bg-[#eef3df] text-[#6f7f1f]"
-                            : "text-[#4b4f44] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
+                        `rounded-xl px-3 py-2 text-sm transition-colors ${isActive
+                          ? "bg-[#eef3df] text-[#6f7f1f]"
+                          : "text-[#4b4f44] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
                         }`
                       }
                       onClick={closeMobileMenu}
@@ -386,10 +375,9 @@ export default function Header() {
               <NavLink
                 to="/service"
                 className={({ isActive }) =>
-                  `rounded-xl px-3 py-2 transition-colors ${
-                    isActive
-                      ? "bg-[#eef3df] text-[#6f7f1f]"
-                      : "text-[#2f3129] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
+                  `rounded-xl px-3 py-2 transition-colors ${isActive
+                    ? "bg-[#eef3df] text-[#6f7f1f]"
+                    : "text-[#2f3129] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
                   }`
                 }
                 onClick={closeMobileMenu}
@@ -400,10 +388,9 @@ export default function Header() {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  `rounded-xl px-3 py-2 transition-colors ${
-                    isActive
-                      ? "bg-[#eef3df] text-[#6f7f1f]"
-                      : "text-[#2f3129] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
+                  `rounded-xl px-3 py-2 transition-colors ${isActive
+                    ? "bg-[#eef3df] text-[#6f7f1f]"
+                    : "text-[#2f3129] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
                   }`
                 }
                 onClick={closeMobileMenu}
@@ -422,10 +409,9 @@ export default function Header() {
               <NavLink
                 to="/pricing"
                 className={({ isActive }) =>
-                  `rounded-xl px-3 py-2 transition-colors ${
-                    isActive
-                      ? "bg-[#eef3df] text-[#6f7f1f]"
-                      : "text-[#2f3129] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
+                  `rounded-xl px-3 py-2 transition-colors ${isActive
+                    ? "bg-[#eef3df] text-[#6f7f1f]"
+                    : "text-[#2f3129] hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
                   }`
                 }
                 onClick={closeMobileMenu}

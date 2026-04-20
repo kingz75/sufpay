@@ -13,9 +13,9 @@ import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import Aboutus from "./pages/about/aboutus";
-// import Projects from "./pages/projects";
+import Projects from "./pages/projects";
 // import Product from "./pages/product";
-// import Service from "./pages/service";
+import Service from "./pages/service";
 // import Pricing from "./pages/pricing";
 // import Contact from "./pages/Contact";
 // import DeveloperDocs from "./pages/developerDocs";
@@ -38,24 +38,10 @@ export default function App() {
           <Route path="/about" element={<Aboutus />} />
           <Route path="/about/aboutus" element={<Aboutus />} />
 
-          {/* <Route path="/about/aboutus" element={<Aboutus />} />
-          <Route path="/about/frofile" element={<Profile />} />
-
+          <Route path="/service" element={<Service />} />
           <Route path="/projects" element={<Projects />} />
 
-          <Route path="/product" element={<Product />} />
-
-          <Route path="/service" element={<Service />} />
-
-          <Route path="/contact" element={<Contact />} />
-
-          <Route path="/developer-docs" element={<DeveloperDocs />} />
-
-          <Route path="/pricing" element={<Pricing />} />
-
-          <Route path="/signin" element={<Signin />} /> */}
-
-          {/* su Sub Routes */}
+          {/* Other Routes */}
         </Routes>
 
         <Footer />

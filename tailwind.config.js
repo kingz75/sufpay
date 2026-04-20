@@ -3,9 +3,10 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
+				poppins: ['Poppins', 'sans-serif'],
 				manrope: ['Manrope', 'sans-serif'],
 				Montserrat: ['Montserrat', 'sans-serif'],
-				sans: ['Manrope', 'Montserrat', 'sans-serif'],
+				sans: ['Poppins', 'Manrope', 'Montserrat', 'sans-serif'],
 			},
 			keyframes: {
 				parallax: {
