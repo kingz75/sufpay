@@ -38,7 +38,7 @@ export default function Map() {
 
             <textarea
               placeholder="Write a Message"
-              className="w-full p-2 sm:p-3 h-24 sm:h-32 lg:h-40 rounded-lg bg-[#ffffff] text-[#1F1E17] outline-none mb-4 sm:mb-6"
+              className="w-full p-2 sm:p-3 h-16 sm:h-32 lg:h-40 rounded-lg bg-[#ffffff] text-[#1F1E17] outline-none mb-4 sm:mb-6"
             />
 
             <button className="bg-[#4BAF47] text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-lg w-fit hover:opacity-90">

@@ -1,13 +1,13 @@
-const bannerImage = "/back/proimage1.jpg";
+import Abvideo from "../../../assets/back/abvideo.png";
 
 export default function Banner() {
   return (
-    <section className="bg-white px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-      <div className="mx-auto max-w-[1180px]">
+    <section className="bg-[#F9F9F9] px-4 py-6 sm:px-6 md:px-10 lg:px-[200px] lg:py-16">
+      <div className="mx-auto max-w-[2000px]">
         <img
-          src={bannerImage}
+          src={Abvideo}
           alt="Sufpay highlight"
-          className="h-[240px] w-full rounded-[30px] object-cover object-center shadow-[0_18px_50px_rgba(0,0,0,0.1)] sm:h-[300px] lg:h-[340px]"
+          className="w-full rounded-[30px] object-cover object-center"
         />
       </div>
     </section>

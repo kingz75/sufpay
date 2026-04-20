@@ -2,16 +2,16 @@ import Abimage from "../../../assets/images/abimage2.png";
 
 export default function Intro() {
   return (
-    <section className="bg-white  py-14   lg:py-20">
-      <div className="grid grid-cols-[1.25fr_1.05fr] mx-auto max-w-[2000px] gap-10 px-[160px]  lg:items-center">
-        <div className="">
-          <p className="text-[32px] font-medium  text-[#2C2C2C]">
+    <section className="bg-[#F9F9F9] px-4 py-10 sm:px-6 md:px-10 lg:px-[160px] lg:py-20">
+      <div className="mx-auto max-w-[2000px] grid gap-8 lg:grid-cols-[1.25fr_1.05fr] lg:gap-[71px] lg:items-center">
+        <div>
+          <p className="text-[22px] sm:text-[26px] lg:text-[32px] font-medium text-[#2C2C2C]">
             About Us
           </p>
-          <h2 className="mt-4 text-[24px] font-semibold text-[#2C2C2C] ">
+          <h2 className="mt-2 lg:mt-4 text-[18px] sm:text-[20px] lg:text-[24px] text-[#2C2C2C]">
             Restoring Balance to an Opaque Market.
           </h2>
-          <div className="mt-6 space-y-4 text-[18px] leading-8 text-[#4E4E4E]">
+          <div className="mt-3 text-[14px] sm:text-[15px] lg:text-[18px] leading-[28px] sm:leading-[30px] lg:leading-8 text-[#4E4E4E] lg:text-justify">
             <p>
               SufPay is at the forefront of financial technology innovation in
               Nigeria, dedicated to revolutionizing the landscape of digital
@@ -34,11 +34,11 @@ export default function Intro() {
           </div>
         </div>
 
-        <div className="">
+        <div className="w-full">
           <img
             src={Abimage}
             alt="Team collaboration"
-            className=" w-full   object-center  "
+            className="w-full rounded-xl object-center"
           />
         </div>
       </div>

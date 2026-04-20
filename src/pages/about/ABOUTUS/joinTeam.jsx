@@ -1,86 +1,149 @@
-export default function JoinTeam() {
-  const highlights = [
-    "A place to grow with a team that values clarity and consistency.",
-    "Hands-on work across products, people, and real business outcomes.",
-    "A culture built around accountability, learning, and momentum.",
-  ];
-
+function MailIcon() {
   return (
-    <section className="bg-[#707882] px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-      <div className="mx-auto grid max-w-[1180px] gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-        <div className="text-white">
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-white/65">
-            Join Us
-          </p>
-          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-            Join Our Team
-          </h2>
-          <p className="mt-5 max-w-[520px] text-[15px] leading-8 text-white/85">
-            We are always interested in people who can help shape secure,
-            useful, and trustworthy financial experiences.
-          </p>
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6 sm:h-8 sm:w-8">
+      <path
+        d="M4 6.75A1.75 1.75 0 0 1 5.75 5h12.5A1.75 1.75 0 0 1 20 6.75v10.5A1.75 1.75 0 0 1 18.25 19H5.75A1.75 1.75 0 0 1 4 17.25V6.75Z"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+      />
+      <path
+        d="m6 8 6 4.5L18 8"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
-          <div className="mt-8 space-y-4">
-            {highlights.map((item) => (
-              <div key={item} className="flex items-start gap-3">
-                <span className="mt-2 h-3 w-3 shrink-0 rounded-sm bg-[#dbe37d]" />
-                <p className="text-[15px] leading-7 text-white/85">{item}</p>
+function GlobeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6 sm:h-8 sm:w-8">
+      <circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" strokeWidth="1.8" />
+      <path
+        d="M3.75 12h16.5M12 3.75c2.5 2.3 3.75 4.9 3.75 8.25S14.5 17.95 12 20.25c-2.5-2.3-3.75-4.9-3.75-8.25S9.5 6.05 12 3.75Z"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function ChevronDownIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4">
+      <path
+        d="M6 9l6 6 6-6"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function ContactRow({ icon, title, value }) {
+  return (
+    <div className="flex items-center gap-3 lg:gap-4">
+      <div className="flex h-9 w-9 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-md bg-white text-[#B4C243] shadow-[0_1px_0_rgba(0,0,0,0.03)]">
+        {icon}
+      </div>
+      <div>
+        <p className="text-[12px] sm:text-[15px] font-medium uppercase tracking-[0.04em] text-[#F9F9F9]">
+          {title}
+        </p>
+        <p className="mt-0.5 lg:mt-1 text-[12px] sm:text-[15px] leading-tight text-[#F9F9F9] break-all">
+          {value}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default function JoinTeam() {
+  return (
+    <section className="bg-[#7C8794] p-4 sm:p-6 md:p-8 lg:px-[200px] lg:py-14">
+      <div className="mx-auto max-w-[2000px] rounded-lg bg-[#7C8794] px-4 py-10 sm:px-6 lg:px-0 lg:py-0">
+        <div className="grid gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:gap-[70px] lg:items-center">
+          {/* Left: text + contact info */}
+          <div className="text-white">
+            <h2 className="text-[28px] sm:text-[36px] lg:text-[40px] font-semibold leading-[1.1]">
+              Join Our Team
+            </h2>
+            <p className="mt-3 text-[13px] sm:text-[15px] leading-[1.7] text-white/90">
+              Can't find the perfect role? Send us your resume for our talent
+              pool, and we'll reach out when a match opens up.
+            </p>
+
+            <div className="mt-6 lg:mt-8 space-y-5 lg:space-y-6">
+              <ContactRow
+                icon={<MailIcon />}
+                title="Email Requirement"
+                value="careers@sufpayenergy.com"
+              />
+              <ContactRow
+                icon={<GlobeIcon />}
+                title="Our Website"
+                value="www.sufpayenergy.com/careers"
+              />
+            </div>
+          </div>
+
+          {/* Right: form */}
+          <div className="w-full rounded-[10px] bg-white px-5 py-6 shadow-[0_10px_30px_rgba(0,0,0,0.12)] sm:px-7 sm:py-7">
+            <form className="space-y-5">
+              <label className="block">
+                <span className="text-[11px] font-medium uppercase tracking-[0.02em] text-[#5c6269]">
+                  Full Name
+                </span>
+                <input
+                  type="text"
+                  placeholder="E.g James Christman"
+                  className="mt-2 h-11 w-full rounded-lg border border-transparent bg-[#f5f6f7] px-4 text-[13px] text-[#404751] outline-none placeholder:text-[#7f878f] focus:border-[#d7dbe0]"
+                />
+              </label>
+
+              <div>
+                <span className="text-[11px] font-medium uppercase tracking-[0.02em] text-[#5c6269]">
+                  Area of Interest
+                </span>
+                <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-center">
+                  <div className="relative flex-1">
+                    <select className="h-11 w-full appearance-none rounded-lg border border-transparent bg-[#f5f6f7] px-4 pr-10 text-[13px] text-[#404751] outline-none focus:border-[#d7dbe0]">
+                      <option>Engineering</option>
+                      <option>Product</option>
+                      <option>Design</option>
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[#4b4f55]">
+                      <ChevronDownIcon />
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    className="h-11 w-full sm:w-[122px] rounded-lg bg-[#f69312] px-6 text-[13px] font-semibold text-white transition-colors hover:bg-[#e98804]"
+                  >
+                    Upload CV
+                  </button>
+                </div>
               </div>
-            ))}
+
+              <button
+                type="button"
+                className="mt-2 h-12 w-full rounded-lg bg-[#7b8b29] text-[13px] font-medium text-white transition-colors hover:bg-[#6e7e23]"
+              >
+                Register for update
+              </button>
+            </form>
           </div>
-        </div>
-
-        <div className="rounded-[28px] bg-white p-5 shadow-[0_18px_40px_rgba(0,0,0,0.12)] sm:p-7">
-          <div className="grid gap-4 sm:grid-cols-2">
-            <label className="flex flex-col gap-2 text-sm font-medium text-[#4b5144]">
-              Full Name
-              <input
-                type="text"
-                placeholder="Your name"
-                className="rounded-xl border border-[#dfe4d6] bg-[#fafbf8] px-4 py-3 text-sm outline-none transition focus:border-[#6c7d22]"
-              />
-            </label>
-            <label className="flex flex-col gap-2 text-sm font-medium text-[#4b5144]">
-              Email
-              <input
-                type="email"
-                placeholder="you@example.com"
-                className="rounded-xl border border-[#dfe4d6] bg-[#fafbf8] px-4 py-3 text-sm outline-none transition focus:border-[#6c7d22]"
-              />
-            </label>
-            <label className="flex flex-col gap-2 text-sm font-medium text-[#4b5144]">
-              Position
-              <input
-                type="text"
-                placeholder="Role of interest"
-                className="rounded-xl border border-[#dfe4d6] bg-[#fafbf8] px-4 py-3 text-sm outline-none transition focus:border-[#6c7d22]"
-              />
-            </label>
-            <label className="flex flex-col gap-2 text-sm font-medium text-[#4b5144]">
-              Phone
-              <input
-                type="tel"
-                placeholder="+234 ..."
-                className="rounded-xl border border-[#dfe4d6] bg-[#fafbf8] px-4 py-3 text-sm outline-none transition focus:border-[#6c7d22]"
-              />
-            </label>
-          </div>
-
-          <label className="mt-4 flex flex-col gap-2 text-sm font-medium text-[#4b5144]">
-            Tell us about yourself
-            <textarea
-              rows={4}
-              placeholder="Share a short note about your experience and interests"
-              className="rounded-xl border border-[#dfe4d6] bg-[#fafbf8] px-4 py-3 text-sm outline-none transition focus:border-[#6c7d22]"
-            />
-          </label>
-
-          <button
-            type="button"
-            className="mt-5 inline-flex rounded-full bg-[#f4a12f] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#ea9620]"
-          >
-            Send Application
-          </button>
         </div>
       </div>
     </section>
