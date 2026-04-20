@@ -437,7 +437,7 @@ export default function Header() {
               </NavLink>
 
               <a
-                href="https://merchant.sufpay.ng"
+                href="/signin"
                 className={`mt-2 inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 ${isAboutActive ? 'bg-[#B4C243]' : 'bg-[#6f7f1f]'}`}
                 onClick={closeMobileMenu}
               >

@@ -21,8 +21,8 @@ import Profile from "./pages/about/profile";
 import Pricing from "./pages/pricing";
 import Contact from "./pages/Contact";
 import ChatBotPage from "./pages/ChatBotPage";
-// import DeveloperDocs from "./pages/developerDocs";
-// import Signin from "./pages/signin";
+
+
 
 
 
@@ -49,9 +49,9 @@ export default function App() {
 
           <Route path="/service" element={<Service />} />
 
-          <Route path="/developer-docs" element={<DeveloperDocs />} />
+          
 
-          <Route path="/signin" element={<Signin />} /> */} 
+          
 
           {/* su Sub Routes */}
         </Routes>
