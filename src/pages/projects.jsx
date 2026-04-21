@@ -13,7 +13,7 @@ export default function Projects() {
     }, []);
 
     return (
-        <main className="min-h-screen  ">
+        <main className="min-h-screen font-poppins  ">
             <ProjectHero />
             <GovernmentProjects />
             <OilGasSection />

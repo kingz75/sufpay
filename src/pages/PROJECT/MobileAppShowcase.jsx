@@ -20,7 +20,7 @@ export default function MobileAppShowcase() {
                 >
                     <h2 className="text-[28px] md:text-[32px] font-medium mb-4">SufPay Mobile Banking App</h2>
                     <p className="text-[#000000] text-base md:text-[18px] max-w-2xl mx-auto leading-relaxed">
-                        Your Complete Financial Ecosystem in Your Pocket. The SufPay Mobile App [currently in development] is designed to give individuals and businesses absolute control over their financial digital future.
+                        Your Complete Financial Ecosystem in Your Pocket. The SufPay Mobile App (currently in development) is designed to give individuals and businesses absolute control over their financial digital future.
                     </p>
                     
                     {/* Store Buttons Placeholder */}

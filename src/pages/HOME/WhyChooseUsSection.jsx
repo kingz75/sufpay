@@ -13,7 +13,7 @@ const reasons = [
         icon: wc1,
         title: 'Fast and Reliable Transactions',
         description:
-            'Process payments instantly with a system built for speed, stability, and high performance—no delays, no disruptions.',
+            'Process payments instantly with a system built for speed, stability, and high performance no delays, no disruptions.',
         color: 'bg-[#F4F7EB]',
         
     },
@@ -21,21 +21,21 @@ const reasons = [
         icon: wc2,
         title: 'Easy Integration',
         description:
-            'Seamlessly integrate Sufpay into your website or mobile app using developer-friendly APIs and plugins, with minimal setup required.',
+            'Seamlessly integrate Sufpay into your website or mobile app using developer friendly APIs and plugins, with minimal setup required.',
         color: 'bg-[#FFF9E6]',
     },
     {
         icon: wc3,
         title: 'Advanced Security You Can Trust',
         description:
-            'Your transactions are protected with industry-standard encryption and secure infrastructure, keeping your business and customer data safe at all times.',
+            'Your transactions are protected with industry standard encryption and secure infrastructure, keeping your business and customer data safe at all times.',
         color: 'bg-[#FFF0F0]',
     },
     {
         icon: wc4,
         title: 'Real-Time Insights and Analytics',
         description:
-            'Monitor your transactions, track revenue, and gain valuable business insights with detailed, real-time reporting tools.',
+            'Monitor your transactions, track revenue, and gain valuable business insights with detailed, real time reporting tools.',
         color: 'bg-[#F4F7EB]',
     },
     {
@@ -49,7 +49,7 @@ const reasons = [
         icon: wc6,
         title: 'Scalable for Every Business',
         description:
-            'Whether you’re a startup or an enterprise, Sufpay grows with you—handling everything from small transactions to high-volume operations effortlessly.',
+            'Whether you’re a startup or an enterprise, Sufpay grows with you handling everything from small transactions to high volume operations effortlessly.',
         color: 'bg-[#F9F9F9]',
     },
 ];
@@ -66,7 +66,7 @@ export default function WhyChooseUsSection() {
                             Why Choose Us
                         </h2>
                         <p className="text-[#4E4E4E] text-base md:text-[18px] leading-relaxed">
-                            Our team is available 24/7 to assist you with any questions, technical issues, or guidance—ensuring your payments and business operations run smoothly at all times.
+                            Our team is available 24/7 to assist you with any questions, technical issues, or guidance ensuring your payments and business operations run smoothly at all times.
                         </p>
                     </div>
                     <div className="relative lg:col-span-6">

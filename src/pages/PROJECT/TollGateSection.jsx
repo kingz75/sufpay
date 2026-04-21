@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import tollImg from '../../assets/images/tollgateImage.png';
 import backImg from '../../assets/images/service2.png';
-import dashboardImg from '../../assets/images/tollgateImage2.png';
+import dashboardImg from '../../assets/images/tollgateImage3.png';
 import arrow from '../../assets/images/arrow.png';
 
 export default function TollGateSection() {
@@ -42,14 +42,14 @@ export default function TollGateSection() {
                         className="flex flex-col justify-center h-full"
                     >
                         <h2 className="text-[28px] md:text-[32px] leading-[41px] font-bold text-[#1a1a1a] mb-2">
-                            Toll Gate & Bill Payments
+                            Toll Gate Payments
                         </h2>
                         <p className="text-[#454545] text-[18px] leading-[30px] mb-4 max-w-lg">
-                            A one-stop shop for mobile wallet top-ups, utility bill payments, and integrated electronic toll management.
+                            SufPay Limited. acted as the primary catalyst for the Kogi State Government in modernizing its road infrastructure revenue collection system. By transitioning from traditional cash based manual systems to a secure, automated digital ecosystem, we have significantly enhanced operational efficiency and fiscal transparency.
                         </p>
 
                         <button className="flex items-center gap-3 bg-[#637524] text-white text-[15px] px-5 py-2.5 rounded-full font-semibold hover:bg-[#52611d] transition-all mb-7 w-fit">
-                            Visit site
+                            Request Service 
                             <div className=" rounded-full  text-[#637524] flex items-center justify-center">
                                 <img src={arrow} alt="" />
                             </div>

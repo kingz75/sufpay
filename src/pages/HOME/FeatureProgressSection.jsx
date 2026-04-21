@@ -19,7 +19,7 @@ const steps = [
     {
         id: 2,
         title: 'Monitor Transactions',
-        description: 'Monitor all payments in real-time from your merchant dashboard.',
+        description: 'Monitor all payments in real time from your merchant dashboard.',
         icon: FiMonitor
     },
     {

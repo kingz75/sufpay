@@ -40,7 +40,7 @@ export default function PaymentOptionsSection() {
                             className="text-[#4E4E4E] text-[18px] md:text-base leading-relaxed mb-8 max-w-lg"
                         >
                             Accept payments through cards, bank transfers, and other digital
-                            payment methods—all in one place. Sufpay makes it easy for your
+                            payment methods all in one place. Sufpay makes it easy for your
                             customers to pay the way they prefer.
                         </motion.p>
 
