@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .header { background: #6B7E1B; color: white; padding: 20px; border-radius: 8px 8px 0 0; }
+    .content { background: #f9f9f9; padding: 20px; border: 1px solid #ddd; }
+    .field { margin-bottom: 15px; }
+    .label { font-weight: bold; color: #333; }
+    .value { color: #555; }
+    .footer { background: #333; color: white; padding: 15px; border-radius: 0 0 8px 8px; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>New Contact Form Submission</h2>
+  </div>
+  
+  <div class="content">
+    <div class="field">
+      <span class="label">Name:</span>
+      <span class="value">{{first_name}} {{last_name}}</span>
+    </div>
+    
+    <div class="field">
+      <span class="label">Email:</span>
+      <span class="value">{{email}}</span>
+    </div>
+    
+    <div class="field">
+      <span class="label">Phone:</span>
+      <span class="value">{{phone}}</span>
+    </div>
+    
+    <div class="field">
+      <span class="label">Message:</span>
+      <div class="value">{{message}}</div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>SufPay Contact Form</p>
+  </div>
+</body>
+</html>

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Check } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 function UploadSuccess({ onClose }) {
   return (
@@ -36,12 +37,31 @@ function UploadSuccess({ onClose }) {
 }
 
 export default function ContactForm() {
+  const formRef = useRef();
   const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    event.currentTarget.reset();
-    setSubmitted(true);
+    setIsLoading(true);
+    setError(null);
+
+    try {
+      await emailjs.sendForm(
+        "service_en4ldj4",
+        "template_qvckr3s",
+        formRef.current,
+        "wnibN4tBeKxz2lw-X"
+      );
+      formRef.current.reset();
+      setSubmitted(true);
+    } catch (err) {
+      setError("Failed to send message. Please try again.");
+      console.error("EmailJS error:", err);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -49,16 +69,18 @@ export default function ContactForm() {
       {submitted ? (
         <UploadSuccess onClose={() => setSubmitted(false)} />
       ) : (
-        <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
+        <form ref={formRef} className="flex flex-col gap-5" onSubmit={handleSubmit}>
           <div className="flex flex-col gap-5 sm:flex-row">
             <input
               type="text"
+              name="first_name"
               placeholder="First Name"
               required
               className="w-full rounded-[10px] border-2 bg-[#F4F5F7] px-5 py-4 text-[15px] text-[#4E4E4E] transition-colors focus:border-[#6B7E1B] focus:bg-white focus:outline-none"
             />
             <input
               type="text"
+              name="last_name"
               placeholder="Last Name"
               required
               className="w-full rounded-[10px] border-2 bg-[#F4F5F7] px-5 py-4 text-[15px] text-[#4E4E4E] transition-colors focus:border-[#6B7E1B] focus:bg-white focus:outline-none"
@@ -67,6 +89,7 @@ export default function ContactForm() {
 
           <input
             type="email"
+            name="email"
             placeholder="Email"
             required
             className="w-full rounded-[10px] border-2 bg-[#F4F5F7] px-5 py-4 text-[15px] text-[#4E4E4E] transition-colors focus:border-[#6B7E1B] focus:bg-white focus:outline-none"
@@ -74,24 +97,31 @@ export default function ContactForm() {
 
           <input
             type="tel"
+            name="phone"
             placeholder="Phone Number"
             required
             className="w-full rounded-[10px] border-2 bg-[#F4F5F7] px-5 py-4 text-[15px] text-[#4E4E4E] transition-colors focus:border-[#6B7E1B] focus:bg-white focus:outline-none"
           />
 
           <textarea
+            name="message"
             placeholder="Message....."
             rows="4"
             required
             className="w-full resize-none rounded-[10px] border-2 bg-[#F4F5F7] px-5 py-4 text-[15px] text-[#4E4E4E] transition-colors focus:border-[#6B7E1B] focus:bg-white focus:outline-none"
           ></textarea>
 
+          {error && (
+            <p className="text-red-500 text-sm">{error}</p>
+          )}
+
           <div className="mt-2 flex justify-end">
             <button
               type="submit"
-              className="flex items-center gap-3 rounded-full bg-[#6B7E1B] px-4 py-2 text-white shadow-md transition-colors hover:bg-[#5C6D17] lg:px-7 lg:py-3.5"
+              disabled={isLoading}
+              className="flex items-center gap-3 rounded-full bg-[#6B7E1B] px-4 py-2 text-white shadow-md transition-colors hover:bg-[#5C6D17] lg:px-7 lg:py-3.5 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              <span>Send</span>
+              <span>{isLoading ? "Sending..." : "Send"}</span>
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#1a1a2e]">
                 <img
                   src="https://img.icons8.com/ios-filled/50/ffffff/right.png"
