@@ -1,10 +1,16 @@
+import { motion } from "framer-motion";
 import Abimage from "../../../assets/images/abimage2.png";
 
 export default function Intro() {
   return (
     <section className="bg-[#F9F9F9] px-4 py-10 sm:px-6 md:px-10 lg:px-[160px] lg:py-20">
       <div className="mx-auto max-w-[2000px] grid gap-8 lg:grid-cols-[1.25fr_1.05fr] lg:gap-[71px] lg:items-center">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <p className="text-[22px] sm:text-[26px] lg:text-[32px] font-medium text-[#2C2C2C]">
             About Us
           </p>
@@ -29,18 +35,24 @@ export default function Intro() {
               manufacturers' representatives and general suppliers. Furthermore,
               we engage in all activities conducive to achieving our objectives,
               solidifying our position as a trusted partner for individuals,
-              businesses, and government entities
+              businesses, and government entities.
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="w-full">
+        <motion.div 
+          className="w-full"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+        >
           <img
             src={Abimage}
             alt="Team collaboration"
             className="w-full rounded-xl object-center"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

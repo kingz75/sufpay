@@ -63,7 +63,7 @@ export default function CoreValues() {
 
                 <button
                   type="button"
-                  className="absolute bottom-1 -right-[60px] flex -translate-x-1/2 items-center gap-3 rounded-full bg-[#B4C243] px-[20px] py-[10px] text-[14px] font-medium text-[#2f3129] shadow-[0_8px_18px_rgba(0,0,0,0.16)] lg:-right-[65px]"
+                  className="absolute bottom-1 -right-[60px] flex -translate-x-1/2 items-center gap-3 rounded-full bg-[#B4C243] px-[20px] py-[10px] text-[14px] font-medium text-[#2f3129] shadow-[0_8px_18px_rgba(0,0,0,0.16)] lg:-right-[75px]"
                 >
                   <span className="whitespace-nowrap">Visit Page</span>
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#2f3129] text-white">

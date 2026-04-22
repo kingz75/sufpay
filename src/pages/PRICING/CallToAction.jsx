@@ -1,8 +1,9 @@
-import React from 'react';
-
-const ICON_PLACEHOLDER = "https://placehold.co/40x40.png";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function CallToAction() {
+  const navigate = useNavigate();
+
   return (
     <section className="py-10  pb-[60px] bg-white font-manrope">
       <div className="max-w-[2000px] mx-auto px-4 lg:px-[160px]">
@@ -17,17 +18,33 @@ export default function CallToAction() {
               Ready for an Audit?
             </h2>
             <p className="lg:text-[18px] text-[15px] text-[#FFFFFF] max-w-[680px] mx-auto mb-9 leading-relaxed">
-              Send us your last two processing statements. Our analysts will perform a deep-dive live from comparison at no cost.
+              Send us your last two processing statements. Our analysts will
+              perform a deep-dive live from comparison at no cost.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <button className="inline-flex items-center gap-2 bg-[#c8d96e] hover:bg-[#b5c96a] text-[#1a1a2e] border-none rounded-lg p-[13px_28px] text-[0.9rem] font-bold cursor-pointer transition-all duration-250 hover:-translate-y-[2px] shadow-[0_4px_14px_rgba(200,217,110,0.2)] hover:shadow-[0_8px_24px_rgba(200,217,110,0.35)]">
-                <img src="https://img.icons8.com/ios-filled/50/1a1a2e/upload.png" alt="Upload icon" className="w-4 h-4 object-contain" />
+              <button
+                type="button"
+                onClick={() => navigate("/pricing/upload-statements")}
+                className="inline-flex items-center gap-2 bg-[#c8d96e] hover:bg-[#b5c96a] text-[#1a1a2e] border-none rounded-lg p-[13px_28px] text-[0.9rem] font-bold cursor-pointer transition-all duration-250 hover:-translate-y-[2px] shadow-[0_4px_14px_rgba(200,217,110,0.2)] hover:shadow-[0_8px_24px_rgba(200,217,110,0.35)]"
+              >
+                <img
+                  src="https://img.icons8.com/ios-filled/50/1a1a2e/upload.png"
+                  alt="Upload icon"
+                  className="w-4 h-4 object-contain"
+                />
                 Upload Statements
               </button>
 
-              <button className="inline-flex items-center gap-2 bg-transparent hover:bg-white/10 text-white border-[1.5px] border-white/40 rounded-lg p-[13px_28px] text-[0.9rem] font-semibold cursor-pointer transition-all duration-250 hover:-translate-y-[2px]">
-                <img src="https://img.icons8.com/ios-filled/50/ffffff/speech-bubble.png" alt="Speak icon" className="w-4 h-4 object-contain" />
+              <button
+                onClick={() => navigate("/contact")}
+                className="inline-flex items-center gap-2 bg-transparent hover:bg-white/10 text-white border-[1.5px] border-white/40 rounded-lg p-[13px_28px] text-[0.9rem] font-semibold cursor-pointer transition-all duration-250 hover:-translate-y-[2px]"
+              >
+                <img
+                  src="https://img.icons8.com/ios-filled/50/ffffff/speech-bubble.png"
+                  alt="Speak icon"
+                  className="w-4 h-4 object-contain"
+                />
                 Speak with an Analyst
               </button>
             </div>

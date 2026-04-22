@@ -27,7 +27,7 @@ export default function ContactInfo({ onLiveChatClick }) {
         </li>
         <li className="flex items-start gap-4">
           <img src="https://img.icons8.com/ios-filled/50/4E4E4E/new-post.png" alt="Email" className="w-[22px] h-[22px] object-contain mt-0.5" />
-          <span className="text-[16px] text-[#4E4E4E] font-medium">sufpayltd@gmail.com, Info@Sufpay.ng.Business.</span>
+          <span className="text-[16px] text-[#4E4E4E] font-medium">sufpayltd@gmail.com, info@syspay.ng</span>
         </li>
         <li className="flex items-start gap-4">
           <img src="https://img.icons8.com/ios-filled/50/4E4E4E/clock--v1.png" alt="Time" className="w-[22px] h-[22px] object-contain mt-0.5" />

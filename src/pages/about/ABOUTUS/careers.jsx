@@ -15,7 +15,7 @@ export default function Careers() {
                 Internships &amp; Graduate Program
               </h3>
               <p className="mt-2 lg:mt-5 text-[14px] lg:text-[15px] leading-7 lg:leading-8 text-[#FFFFFF]">
-                Launch your career with hand-on experience in global
+                Launch your career with hands-on experience in global
                 infrastructure projects. Our 24-month graduate program offers
                 rotation across 3 continents.
               </p>

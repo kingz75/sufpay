@@ -1,19 +1,45 @@
+import { motion } from "framer-motion";
 import Abimage from "../../../assets/images/abimage3.png";
 
 export default function Mission() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2 },
+    },
+  };
+
+  const textVariants = {
+    hidden: { opacity: 0, x: 30 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
   return (
     <section className="bg-[#f4f1e3] px-4 py-10 sm:px-6 md:px-10 lg:px-[160px] lg:py-20">
       <div className="mx-auto max-w-[2000px] grid gap-8 lg:grid-cols-[1.05fr_1.25fr] lg:gap-[71px] lg:items-center">
-        <div className="w-full">
+        <motion.div 
+          className="w-full"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <img
             src={Abimage}
             alt="Community impact"
             className="w-full rounded-xl object-center"
           />
-        </div>
+        </motion.div>
 
-        <div className="space-y-6 lg:space-y-8">
-          <div>
+        <motion.div 
+          className="space-y-6 lg:space-y-8"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <motion.div variants={textVariants}>
             <h3 className="text-[22px] sm:text-[28px] lg:text-[36px] font-medium text-[#2C2C2C]">
               Our Mission
             </h3>
@@ -26,9 +52,9 @@ export default function Mission() {
               seamless digital transformation for individuals, businesses, and
               governments in Nigeria.
             </p>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div variants={textVariants}>
             <h3 className="text-[22px] sm:text-[28px] lg:text-[36px] font-medium text-[#2C2C2C]">
               Our Vision
             </h3>
@@ -37,8 +63,8 @@ export default function Mission() {
               transformation, enabling success for Individuals, Businesses,
               and Governments in Nigeria.
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

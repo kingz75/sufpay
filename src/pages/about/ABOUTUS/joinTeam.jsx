@@ -87,12 +87,12 @@ export default function JoinTeam() {
               <ContactRow
                 icon={<MailIcon />}
                 title="Email Requirement"
-                value="careers@sufpayenergy.com"
+                value="Careers@sufpay.com.ng"
               />
               <ContactRow
                 icon={<GlobeIcon />}
                 title="Our Website"
-                value="www.sufpayenergy.com/careers"
+                value="www.Sufpay.ng"
               />
             </div>
           </div>

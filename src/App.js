@@ -1,11 +1,6 @@
 import React from "react";
 import ScrollToTop from "./components/ScrollToTop";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -17,6 +12,7 @@ import Projects from "./pages/projects";
 import Product from "./pages/product";
 import Service from "./pages/service";
 import Pricing from "./pages/pricing";
+import UploadStatements from "./pages/PRICING/UploadStatements";
 import Contact from "./pages/Contact";
 import ChatBotPage from "./pages/ChatBotPage";
 // import DeveloperDocs from "./pages/developerDocs";
@@ -26,7 +22,6 @@ import ChatBotPage from "./pages/ChatBotPage";
 
 export default function App() {
   function AppContent() {
-    const location = useLocation();
     return (
       <>
         <Header />
@@ -41,6 +36,7 @@ export default function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/service" element={<Service />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/pricing/upload-statements" element={<UploadStatements />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/chatbot" element={<ChatBotPage />} />
           
