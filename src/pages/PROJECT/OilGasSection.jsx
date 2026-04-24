@@ -24,7 +24,7 @@ export default function OilGasSection() {
                         <div className="space-y-10">
                             <div>
                                 <h3 className="text-[24px] text-[#ffffff] font-medium mb-4">Technology for Nigeria's Energy Backbone</h3>
-                                <p className="text-[#ffffff] text-[15px] leading-[28px] text-sm">
+                                <p className="text-[#ffffff] text-[15px] leading-[28px] text-sm text-justify">
                                     SufPay Ltd., provides specialized technological and logistical support to the Oil & Gas sector, ensuring operational efficiency from the field to the boardroom.
                                 </p>
                             </div>
@@ -32,14 +32,14 @@ export default function OilGasSection() {
                             <div className="space-y-10">
                                 <div>
                                     <h4 className="text-[24px] text-[#ffffff] font-medium mb-2">Sector-Specific Services</h4>
-                                    <p className="text-[#ffffff] text-[15px] text-sm leading-[28px]">
+                                    <p className="text-[#ffffff] text-[15px] text-sm leading-[28px] text-justify">
                                         Energy Infrastructure Support: Installation of energy pipelines and the importation of specialized equipment for refineries and extraction sites.
                                     </p>
                                 </div>
-                                <p className="text-[#ffffff] text-[15px] text-sm leading-[28px]">
+                                <p className="text-[#ffffff] text-[15px] text-sm leading-[28px] text-justify">
                                     Procurement & Global Sourcing: Acting as manufacturers' representatives to supply high-quality industrial machinery, spare parts, and heavy equipment for energy operations.
                                 </p>
-                                <p className="text-[#ffffff] text-[15px] text-sm leading-[28px]">
+                                <p className="text-[#ffffff] text-[15px] text-sm leading-[28px] text-justify">
                                     Advanced Surveillance for Pipelines: Deployment of long-range FLIR thermal cameras (such as the Jaeger platform) for 24/7 perimeter security and pipeline monitoring in total darkness or adverse weather.
                                 </p>
                             </div>

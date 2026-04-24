@@ -30,8 +30,8 @@ export default function GeneralContractsSection() {
 
                     {/* Content Part */}
                     <div>
-                        <p className="text-[#2c2c2c] mb-10 text-[14px] leading-[24px]">
-                            We deliver comprehensive infrastructure services for both <br /> private and public sectors:
+                        <p className="text-[#2c2c2c] font-medium mb-10 text-[20px] leading-[30px]">
+                            We Deliver Comprehensive Infrastructure Services For Both  Private And Public Sectors:
                         </p>
 
                         <div className="space-y-8">

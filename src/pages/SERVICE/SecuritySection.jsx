@@ -25,7 +25,7 @@ const securityItems = [
 
 export default function SecuritySection() {
     return (
-        <section className="lg:pt-24 pt-12 lg:pb-24 pb-8 bg-[#F0F3D9]">
+        <section className="lg:pt-24 pt-12 lg:pb-24 pb-8 bg-[#F0F3D9] overflow-hidden">
             <div className="px-4 md:px-12 lg:px-[160px] max-w-[2000px] mx-auto">
                 <div className="text-center lg:mb-16 mb-8">
                     <h2 className="text-[24px] md:text-[32px] font-semibold text-[#2c2c2c] ">

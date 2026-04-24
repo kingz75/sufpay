@@ -7,7 +7,7 @@ import circle3 from '../../assets/images/inf-3.png';
 
 export default function EnergySection() {
     return (
-        <section className="lg:pb-24 pb-12 bg-[#F0F3D9]">
+        <section className="lg:pb-24 pb-12 bg-[#F0F3D9] overflow-hidden">
             <div className="px-4 md:px-12 lg:px-[160px] max-w-[2000px] mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
                     

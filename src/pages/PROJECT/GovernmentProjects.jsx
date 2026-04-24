@@ -59,11 +59,10 @@ export default function GovernmentProjects() {
                                     </div>
                                     <div>
                                         <h4 className="text-[14px] md:text-[15px] font-bold text-[#3a3a3a] mb-1.5">
-                                            Infrastructure Delivery:
+                                            Agricultural Support:
                                         </h4>
                                         <p className="text-[#555] text-xs leading-[1.6] text-justify lg:text-left">
-                                            Successfully managed and delivered large-scale
-                                            infrastructure projects for various government agencies.
+                                            Import and export of agricultural products, tools, and heavy machinery to empower the farming sector.
                                         </p>
                                     </div>
                                 </div>

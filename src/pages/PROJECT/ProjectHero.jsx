@@ -17,8 +17,8 @@ export default function ProjectHero() {
                     <h1 className="text-[24px] lg:text-[40px] font-semibold text-[#454545] leading-[61px]  lg:mb-8 mb-2">
                         Key Projects & Achievements
                     </h1>
-                    <p className="text-[#454545]   text-[15px] md:text-[18px] lg:leading-relaxed leading-[30px] lg:mb-10 mb-6 max-w-2xl">
-                        At Sufpay Ltd., we take pride in our track record of delivering high-impact solutions across various sectors in Nigeria. Our diverse portfolio demonstrates our capability to manage complex logistics, infrastructure development, and large-scale investment facilitation.
+                    <p className="text-[#454545]   text-[15px] md:text-[18px] lg:leading-relaxed text-justify leading-[30px] lg:mb-10 mb-6 max-w-2xl">
+                        At Sufpay Limited, we take pride in our track record of delivering high impact solutions across various sectors in Nigeria. Our diverse portfolio demonstrates our capability to manage complex logistics, infrastructure development, and large-scale investment facilitation.
                     </p>
                     <button className="bg-[#637524] text-white lg:px-8 py-3 lg:py-6 px-8 rounded-full font-semibold hover:bg-[#52611d] transition-colors shadow-lg">
                         Contact Us
