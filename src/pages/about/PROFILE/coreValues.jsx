@@ -10,7 +10,7 @@ const coreValueItems = [
     title: "Collaboration",
     description:
       "SufPay prioritizes open communication and collaboration with teams members and clients, ensuring our solutions align perfectly with specific needs.",
-    descriptionClassName: "font-medium",
+    descriptionClassName: "",
   },
 ];
 
@@ -21,7 +21,7 @@ function CoreValueItem({ title, description, descriptionClassName = "" }) {
         {title}
       </h3>
       <p
-        className={`mt-1 max-w-[620px] text-[15px] leading-[1.65] text-[#2C2C2C] lg:text-[18px] ${descriptionClassName}`}
+        className={`mt-1 max-w-[620px]  text-[15px] leading-[1.65] text-[#2C2C2C] lg:text-[18px] ${descriptionClassName}`}
       >
         {description}
       </p>
@@ -38,7 +38,7 @@ export default function CoreValues() {
             <h2 className="text-[24px] text-[#2C2C2C] lg:text-[32px]">
               Core Values
             </h2>
-            <p className="mt-4 leading-[1.65] text-[#2C2C2C] lg:text-[18px]">
+            <p className="lg:mt-4 mt-2 lg:leading-[1.65] text-[#2C2C2C] lg:text-[18px]">
               SufPay's foundation rests upon three core values: integrity,
               excellence, and collaboration. These values permeate every aspect
               of their operations, guiding interactions with clients, partners,
@@ -52,42 +52,47 @@ export default function CoreValues() {
             </div>
           </div>
 
-          <div className="rounded-[15px] bg-[#637524] p-5 shadow-[0_18px_38px_rgba(0,0,0,0.08)]">
-            <div className="grid gap-6 lg:grid-cols-[0.89fr_1.01fr]">
-              <div className="relative order-2 rounded-[20px] lg:order-1">
-                <img
-                  src={Primage2}
-                  alt="Industrial facility"
-                  className="lg:max-h-[550px] w-full object-contain"
+          <div className="rounded-[15px] bg-[#637524] lg:p-0 p-5 lg:pl-5  shadow-[0_18px_38px_rgba(0,0,0,0.08)]">
+            <div className="grid gap- lg:grid-cols-[0.89fr_1.01fr]">
+              <div className="order-2 rounded-[20px] lg:order-1 grid" style={{ gridTemplateAreas: "'stack'" }}>
+                <div
+                  className="rounded-[20px]"
+                  style={{
+                    backgroundImage: `url(${Primage2})`,
+                    backgroundSize: "contain",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    minHeight: "600px",
+                    gridArea: "stack",
+                  }}
                 />
-
-                <button
-                  type="button"
-                  className="absolute bottom-1 -right-[60px] flex -translate-x-1/2 items-center gap-3 rounded-full bg-[#B4C243] px-[20px] py-[10px] text-[14px] font-medium text-[#2f3129] shadow-[0_8px_18px_rgba(0,0,0,0.16)] lg:-right-[75px]"
-                >
-                  <span className="whitespace-nowrap">Visit Page</span>
-                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#2f3129] text-white">
-                    {"\u27A4"}
-                  </span>
-                </button>
+                 <button
+                   type="button"
+                   className="flex place-self-end justify-self-end items-center gap-2 rounded-full bg-[#B4C243] hover:bg-[#aecb42] lg:[20px] px-[15px] lg:py-[16px] py-[12px] text-[14px] font-medium text-[#2f3129] shadow-[0_8px_18px_rgba(0,0,0,0.16)]"
+                   style={{ gridArea: "stack", margin: "0 12px 12px 0", alignSelf: "end", justifySelf: "end" }}
+                 >
+                   <span className="whitespace-nowrap">Visit Page</span>
+                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#2f3129] text-white">
+                     {"\u27A4"}</span>
+                 </button>
               </div>
 
-              <div className="order-1 flex flex-col justify-center text-[#FFFFFF] lg:order-2">
+              <div className="order-1 lg:pl-5 flex flex-col justify-center text-[#FFFFFF] lg:order-2">
                 <div>
                   <h3 className="text-[24px] font-semibold leading-[1.06]">
                     Industrial Technology &amp; Infrastructure
                   </h3>
-                  <p className="mt-2 max-w-[420px] text-[18px] leading-[1.7]">
+                  <p className="mt-2 max-w-[420px] lg:text-[18px] leading-[1.7]">
                     We support the backbone of development with innovative tools
-                    and systems {"\u2014"} from smart energy solutions to
-                    large-scale engineering projects. Our focus is
+                    and systems  from smart energy solutions to
+                    large scale engineering projects. Our focus is
                     sustainability, efficiency, and long-term impact.
                   </p>
                 </div>
 
                 <div className="mt-4 lg:mt-8">
-                  <h4 className="text-[24px] font-medium">Excellence</h4>
-                  <p className="mt-2 max-w-[420px] text-[18px] leading-[1.7]">
+                  <h4 className="text-[24px]">Excellence</h4>
+                  <p className="mt-2 max-w-[420px] lg:text-[18px] leading-[1.7]">
                     Delivering exceptional quality in services and products is
                     paramount, with the sole goal of ensuring they exceed client
                     expectations

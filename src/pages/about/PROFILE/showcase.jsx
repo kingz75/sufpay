@@ -68,7 +68,7 @@ const swiperBreakpoints = {
 function ShowcaseCard({ image, title, text }) {
   return (
     <div className="rounded-[16px] border border-[#e7ebdd] bg-white p-4 flex flex-col">
-      <div className="h-[200px] sm:h-[220px] lg:h-[260px] w-full overflow-hidden rounded-[12px]">
+      <div className="h-[280px] sm:h-[220px] lg:h-[260px] w-full overflow-hidden rounded-[12px]">
         <img
           src={image}
           alt={title}
@@ -78,7 +78,7 @@ function ShowcaseCard({ image, title, text }) {
       <p className="mt-3 text-start text-[16px] sm:text-[18px] lg:text-[20px] font-medium leading-5 text-[#2C2C2C]">
         {title}
       </p>
-      <p className="mt-2 text-start text-[13px] sm:text-[14px] text-[#2C2C2C] line-clamp-3">
+      <p className="mt-2 text-start text-[13px] sm:text-[14px] text-[#2C2C2C] line-clamp-4 sm:line-clamp-3">
         {text}
       </p>
     </div>
