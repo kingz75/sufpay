@@ -1,6 +1,5 @@
 import React from 'react';
 
-const ICON_PLACEHOLDER = "https://placehold.co/40x40.png";
 
 export default function ContactInfo({ onLiveChatClick }) {
   return (

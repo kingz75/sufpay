@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { FiSettings, FiCreditCard, FiMonitor, FiSend } from 'react-icons/fi';
 import featurePhone from '../../assets/images/feature-phone.png';
 

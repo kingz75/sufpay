@@ -1,5 +1,4 @@
 import React from 'react';
-import { FiSmartphone, FiDollarSign, FiBell, FiPieChart } from 'react-icons/fi';
 import downloadPhone from '../../assets/images/feature-phone - Copy.png';
 import downloadBg from '../../assets/images/download-bg.png';
 
@@ -34,7 +33,7 @@ export default function AnywherePaymentsSection() {
                         <div className="flex flex-row gap-3">
                             {/* Google Play */}
                             <a
-                                href="#"
+                                href="#!"
                                 className="group flex items-center gap-3 bg-[#1a1a1a] hover:bg-[#333] text-white rounded-xl px-5 py-3 transition-all duration-300 hover:shadow-lg"
                             >
                                 <svg className="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
@@ -48,7 +47,7 @@ export default function AnywherePaymentsSection() {
 
                             {/* App Store */}
                             <a
-                                href="#"
+                                href="#!"
                                 className="group flex items-center gap-3 bg-[#1a1a1a] hover:bg-[#333] text-white rounded-xl px-5 py-3 transition-all duration-300 hover:shadow-lg"
                             >
                                 <svg className="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">

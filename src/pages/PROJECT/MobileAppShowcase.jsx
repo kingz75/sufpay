@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import appPhone from '../../assets/images/appPhone.png';
 import appstoreBtn from '../../assets/images/appstore.png';
 import playstoreBtn from '../../assets/images/playstore.png';
-import { HiFingerPrint, HiBell, HiUser, HiCreditCard, HiArrowsRightLeft } from 'react-icons/hi2';
 
 export default function MobileAppShowcase() {
     

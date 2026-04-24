@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import tollImg from '../../assets/images/tollgateImage.png';
-import backImg from '../../assets/images/service2.png';
 import dashboardImg from '../../assets/images/tollgateImage3.png';
 import arrow from '../../assets/images/arrow.png';
 

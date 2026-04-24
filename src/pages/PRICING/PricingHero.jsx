@@ -1,7 +1,6 @@
 import React from 'react';
 
 // Using a generic placeholder for the PNG images as requested
-const ICON_PLACEHOLDER = "https://placehold.co/40x40.png";
 
 const pricingCards = [
   {

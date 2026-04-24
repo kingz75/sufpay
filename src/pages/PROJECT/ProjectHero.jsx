@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import mainImg from '../../assets/images/project-hero.png';
-import circleImg from '../../assets/images/team-mobile.png';
 
 export default function ProjectHero() {
     return (

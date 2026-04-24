@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FiArrowRight } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import dashboardImg from '../../assets/images/dashboards.png';
 import homeBg from '../../assets/images/home-background.png';

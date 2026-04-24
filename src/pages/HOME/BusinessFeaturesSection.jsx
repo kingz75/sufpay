@@ -1,19 +1,6 @@
 import React from 'react';
-import { FiZap, FiShield, FiSmartphone } from 'react-icons/fi';
 import businessPhone from '../../assets/images/business-phone.png';
 
-const features = [
-    {
-        title: 'Simple Setup, Powerful Results',
-        description:
-            'Getting started with Sufpay is quick and straightforward. Create an account, integrate our gateway, and start receiving payments in minutes.',
-    },
-    {
-        title: 'Simple Setup, Powerful Results',
-        description:
-            'Getting started with Sufpay is quick and straightforward. Create an account, integrate our gateway, and start receiving payments in minutes.',
-    },
-];
 
 export default function BusinessFeaturesSection() {
     return (

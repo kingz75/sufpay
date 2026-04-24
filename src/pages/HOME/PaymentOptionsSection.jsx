@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiCheck } from 'react-icons/fi';
 import tick from '../../assets/icons/check-mark.png';
 import paymentAnalytics from '../../assets/images/payment-analytics.jpg';
 import paymentTable from '../../assets/images/payment-table.png';

@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import WideImageSlider from './WideImageSlider';
 
 export default function ServiceHero() {
     return (
