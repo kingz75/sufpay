@@ -51,13 +51,13 @@ export default function SolutionsSection() {
                             transition={{ delay: i * 0.1 }}
                             className="bg-[#F9F9F9] p-8 md:p-10 rounded-[28px]"
                         >
-                            <div className={`w-[61px] h-[60px] flex items-center justify-center mb-5`}>
+                            <div className={`w-[61px] h-[60px] flex items-center justify-center mb-5 mx-auto`}>
                                 <img src={item.icon} alt={item.title} className="object-contain" />
                             </div>
-                            <h3 className="text-xl md:text-[22px] font-bold text-[#1a1a1a] mb-2">
+                            <h3 className="text-xl md:text-[22px] font-bold text-[#1a1a1a] mb-2 text-center">
                                 {item.title}
                             </h3>
-                            <p className="text-gray-500 leading-relaxed text-sm md:text-[15px]">
+                            <p className="text-gray-500 leading-relaxed text-sm md:text-[15px] text-center">
                                 {item.description}
                             </p>
                         </motion.div>
