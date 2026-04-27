@@ -8,7 +8,7 @@ export default function Profile() {
     <main className="bg-[#F9F9F9]">
       <Hero />
       <Advantages />
-      <CoreValues />
+       <CoreValues />
       <Showcase />
     </main>
   );

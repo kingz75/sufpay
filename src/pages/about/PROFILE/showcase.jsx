@@ -78,9 +78,9 @@ function ShowcaseCard({ image, title, text }) {
       <p className="mt-3 text-start text-[16px] sm:text-[18px] lg:text-[20px] font-medium leading-5 text-[#2C2C2C]">
         {title}
       </p>
-      <p className="mt-2 text-start text-[13px] sm:text-[14px] text-[#2C2C2C] line-clamp-4 sm:line-clamp-3">
-        {text}
-      </p>
+       <p className="mt-2 text-start text-[13px] sm:text-[14px] text-[#2C2C2C]">
+         {text}
+       </p>
     </div>
   );
 }

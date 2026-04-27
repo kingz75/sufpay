@@ -1,4 +1,4 @@
-import Primage2 from "../../../assets/images/primage2.png";
+import Primage2 from "../../../assets/back/valueimage.png";
 
 const coreValueItems = [
   {
@@ -54,27 +54,21 @@ export default function CoreValues() {
 
           <div className="rounded-[15px] bg-[#637524] lg:p-0 p-5 lg:pl-5  shadow-[0_18px_38px_rgba(0,0,0,0.08)]">
             <div className="grid gap- lg:grid-cols-[0.89fr_1.01fr]">
-              <div className="order-2 rounded-[20px] lg:order-1 grid" style={{ gridTemplateAreas: "'stack'" }}>
-                <div
-                  className="rounded-[20px]"
-                  style={{
-                    backgroundImage: `url(${Primage2})`,
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                    minHeight: "600px",
-                    gridArea: "stack",
-                  }}
-                />
-                 <button
-                   type="button"
-                   className="flex place-self-end justify-self-end items-center gap-2 rounded-full bg-[#B4C243] hover:bg-[#aecb42] lg:[20px] px-[15px] lg:py-[16px] py-[12px] text-[14px] font-medium text-[#2f3129] shadow-[0_8px_18px_rgba(0,0,0,0.16)]"
-                   style={{ gridArea: "stack", margin: "0 12px 12px 0", alignSelf: "end", justifySelf: "end" }}
-                 >
-                   <span className="whitespace-nowrap">Visit Page</span>
-                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#2f3129] text-white">
-                     {"\u27A4"}</span>
-                 </button>
+               <div className="order-2 rounded-[20px] lg:order-1 grid md:hidden lg:grid" style={{ gridTemplateAreas: "'stack'" }}>
+                  <button
+                    type="button"
+                    className="rounded-[20px] p-0 border-none cursor-pointer"
+                    style={{
+                      backgroundImage: `url(${Primage2})`,
+                      backgroundSize: "contain",
+                      backgroundRepeat: "no-repeat",
+                      backgroundPosition: "center",
+                      minHeight: "600px",
+                      gridArea: "stack",
+                    }}
+                     onClick={() => (window.location.href = "https://sufpay-limited.vercel.app/")}
+                  />
+                 
               </div>
 
               <div className="order-1 lg:pl-5 flex flex-col justify-center text-[#FFFFFF] lg:order-2">
