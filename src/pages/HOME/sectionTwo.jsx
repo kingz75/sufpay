@@ -35,10 +35,11 @@ export default function SectionTwo() {
             }
         }, { threshold: 0.5 });
 
-        if (counterRef.current) observer.observe(counterRef.current);
+        const currentRef = counterRef.current;
+        if (currentRef) observer.observe(currentRef);
 
         return () => {
-            if (counterRef.current) observer.unobserve(counterRef.current);
+            if (currentRef) observer.unobserve(currentRef);
         };
     }, [hasCounted]);
 

@@ -51,6 +51,7 @@ export default function Map() {
         <div className="w-full relative h-64 sm:h-80 md:h-96 lg:h-full order-2 md:order-1">
           {/* MAP */}
           <iframe
+            title="Location Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62464.08359093161!2d8.509983958709311!3d11.904724360047819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ac2bded2ca084f%3A0xb256c4605c6a4c58!2sSheikh%20Nasiru%20kabara%20housing%20estate.%20Amana%20city!5e0!3m2!1sen!2sng!4v1766309525497!5m2!1sen!2sng"
             style={{ border: 0 }}
             allowFullScreen=""

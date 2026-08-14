@@ -221,7 +221,7 @@ export default function Header() {
         </div>
         <div className="hidden lg:flex items-center gap-4 text-[14px] font-medium  xl:gap-6 xl:text-[15px]">
           <a
-            href="/developer-docs"
+            href="/"
             className={`transition-colors duration-200 ${isAboutActive ? "text-white" : "text-[#2f3129] hover:text-[#6f7f1f]"}`}
           >
             Developer Docs
@@ -232,7 +232,7 @@ export default function Header() {
           </NavLink> */}
 
           <a
-            href=""
+            href="/"
             className={`rounded-full px-5 py-2.5 text-sm font-semibold text-[#FFFFFF] shadow-sm transition hover:opacity-90 ${isAboutActive ? 'bg-[#B4C243]' : 'bg-[#637524]'}`}
           >
             Sign in
@@ -407,7 +407,7 @@ export default function Header() {
               </NavLink>
 
               <a
-                href="/developer-docs"
+                href="/"
                 className="rounded-xl px-3 py-2 text-[#2f3129] transition-colors hover:bg-[#f5f7ef] hover:text-[#6f7f1f]"
                 onClick={closeMobileMenu}
               >
@@ -428,7 +428,7 @@ export default function Header() {
               </NavLink> */}
 
               <a
-                href="/signin"
+                href="/"
                 className={`mt-2 inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 ${isAboutActive ? 'bg-[#B4C243]' : 'bg-[#6f7f1f]'}`}
                 onClick={closeMobileMenu}
               >
