@@ -83,7 +83,7 @@ export default function HeroSection() {
                             className="flex flex-col w-full sm:flex-row items-center justify-center mt-10 gap-4"
                         >
                             <button
-                                onClick={() => navigate('/signin')}
+                                // onClick={() => navigate('/signin')}
                                 className="group flex items-center justify-center gap-2 w-full sm:w-auto bg-[#637524] hover:bg-[#556620] text-white font-semibold px-12 py-4 rounded-full text-sm transition-all duration-300 shadow-lg shadow-[#637524]/25 hover:shadow-xl hover:shadow-[#637524]/35 hover:-translate-y-0.5"
                             >
                                 Create account

@@ -227,12 +227,12 @@ export default function Header() {
             Developer Docs
           </a>
 
-          <NavLink to="/pricing" className={(props) => activeLinkClass(props, isAboutActive)}>
+          {/* <NavLink to="/pricing" className={(props) => activeLinkClass(props, isAboutActive)}>
             Pricing
-          </NavLink>
+          </NavLink> */}
 
           <a
-            href="https://merchant.sufpay.ng"
+            href=""
             className={`rounded-full px-5 py-2.5 text-sm font-semibold text-[#FFFFFF] shadow-sm transition hover:opacity-90 ${isAboutActive ? 'bg-[#B4C243]' : 'bg-[#637524]'}`}
           >
             Sign in
@@ -414,7 +414,7 @@ export default function Header() {
                 Developer Docs
               </a>
 
-              <NavLink
+              {/* <NavLink
                 to="/pricing"
                 className={({ isActive }) =>
                   `rounded-xl px-3 py-2 transition-colors ${isActive
@@ -425,7 +425,7 @@ export default function Header() {
                 onClick={closeMobileMenu}
               >
                 Pricing
-              </NavLink>
+              </NavLink> */}
 
               <a
                 href="/signin"
